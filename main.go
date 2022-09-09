@@ -42,7 +42,7 @@ func main() {
 		if err != nil {
 			printError(errReadingInput)
 		}
-
+		shouldConvertAgain = strings.ToUpper(shouldConvertAgain)
 		if shouldConvertAgain != "Y" {
 			fmt.Println("Good bye!")
 			break
